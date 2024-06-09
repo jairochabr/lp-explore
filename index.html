@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html class="click" lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <meta name="description" content="Descubra destinos incríveis e planeje a viagem dos seus sonhos com nossas dicas exclusivas e ofertas imperdíveis. Explore o mundo conosco!">
+  <meta name="theme-color" content="#f5f5f5">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Explore - seu parceiro de viagem">
+  <meta property="og:description" content="Descubra destinos incríveis e planeje a viagem dos seus sonhos com nossas dicas exclusivas e ofertas imperdíveis. Explore o mundo conosco!">
+  <meta property="og:image" content="https://raw.githubusercontent.com/jairochabr/explore-web/assets/video/video.mp4">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:url" content="https://explore-web.netlify.app/">
+  <title>Explore - seu parceiro de viagem</title>
+  <!-- preload images -->
+  <link rel="preload" as="image" href="assets/img/hero-banner.png">
+  <link rel="preload" as="image" href="assets/img/preloader.svg">
+</head>
+<body>
+
+  <!--========================================-->
+  <!--=============== PRELOADER ==============-->
+  <!--========================================-->
+
+  <div class="preloader" data-preloader>
+    <div class="preloader-inner">
+      <img src="assets/img/preloader.svg" width="50" height="50" alt="" class="img" />
+    </div>
+  </div>
+
+  <!--========================================-->
+  <!--=============== HEADER =================-->
+  <!--========================================-->
+
+  <header class="header" data-header>
+    <div class="container">
+      <a href="#" class="logo">
+        <img src="assets/img/logo.svg" width="187" height="38" alt="logo explore">
+      </a>
+
+      <navbar class="navbar" data-navbar>
+        <div class="navbar-top">
+          <a href="#" class="logo">
+            <img src="assets/img/logo.svg" width="187" height="38" alt="logo explore">
+          </a>
+
+          <button class="nav-toggle-btn" aria-expanded="true" aria-label="fechar menu" data-nav-toggler>
+            <i class="ph ph-x" aria-hidden="true"></i>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <a href="#" class="navbar-link">Início</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link">Sobre</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link">Serviço</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link">Preços</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link">Contato</a>
+          </li>
+        </ul>
+
+        <div class="header-action">
+          <a href="#" class="login-btn">Entrar</a>
+          <a href="#" class="btn btn-primary">Cadastre-se</a>
+        </div>
+
+      </navbar>
+
+      <button class="nav-toggle-btn" aria-expanded="false" aria-label="abrir menu" data-nav-toggler>
+        <i class="ph ph-list" aria-hidden="true"></i>
+      </button>
+
+      <div class="overlay" data-overlay data-nav-toggler></div>
+    </div>
+  </header>
+
+  <!--========================================-->
+  <!--================ HERO ==================-->
+  <!--========================================-->
+
+  <main>
+    <article>
+
+      <section class="section hero hero-bg-image" aria-label="início">
+        <div class="container">
+
+          <div class="hero-content">
+            <p class="hero-subtitle">
+              Descubra destinos inesquecíveis
+              <img src="assets/img/title-icon.svg" width="20" height="20" alt="ícone do mundo" class="img">
+            </p>
+            <h1 class="h1 title hero-title">
+              Planeje a Viagem dos Seus Sonhos com a <span>Nossa Ajuda!</span>
+            </h1>
+
+            <p class="hero-text">
+              Descubra destinos incríveis e planeje a viagem dos seus sonhos com nossas dicas exclusivas e ofertas imperdíveis. Explore o mundo conosco!
+            </p>
+
+            <div class="wrapper">
+              <a href="#" class="btn btn-primary">
+                <span class="span">
+                  Planeje Sua Viagem
+                </span>
+                <i class="ph ph-caret-right" aria-hidden="true"></i>
+              </a>
+
+              <a href="https://www.youtube.com" target="_blank" class="hero-btn">
+                <div class="btn-img">
+                  <img src="assets/img/hero-button.png" width="100" height="100" alt="nossa história" class="img-cover">
+                  
+                  <i class="ph-fill ph-play" aria-hidden="true"></i>
+                </div>
+                <p class="text">Assista nossa história</p>
+              </a>
+            </div>
+          </div>
+
+          <figure class="hero-banner">
+            <img src="assets/img/hero-banner.png" width="608" height="594" alt="imagem de início da página" class="banner-img">   
+          </figure>
+
+        </div>
+      </section>
+
+      <!-- ================================== -->
+      <!-- ============ SERVICE ============= -->
+      <!-- ================================== -->
+
+      <section class="section service" aria-label="serviço">
+        <div class="container">
+
+          <div class="title-wrapper">
+            <p class="section-subtitle">
+              serviços que oferecemos
+            </p>
+
+            <h2 class="h2 title section-title">Nossos Principais Valores para Você</h2>
+
+            <p class="section-text">
+              Descubra uma diversidade de benefícios ao utilizar nossos serviços.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="card-icon">
+              <img src="assets/img/service-icon-1.svg" width="60" height="60" loading="lazy" alt="icon">
+            </div>
+
+            <h3 class="h3 title card-title">Muitas opções</h3>
+
+            <p class="card-text">
+              Total de 400+ destinos com os quais trabalhamos.
+            </p>
+
+          </div>
+
+          <div class="service-card">
+            <div class="card-icon">
+              <img src="assets/img/service-icon-2.svg" width="60" height="60" loading="lazy" alt="icon">
+            </div>
+
+            <h3 class="h3 title card-title">Melhores Guias Turísticos</h3>
+            <p class="card-text">
+              Nossos guias turísticos, estão prontos para mostrar o melhor de cada destino.
+            </p>
+
+          </div>
+
+          <div class="service-card">
+            <div class="card-icon">
+              <img src="assets/img/service-icon-3.svg" width="60" height="60" loading="lazy" alt="icon">
+            </div>
+
+            <h3 class="h3 title card-title">Reserva Fácil</h3>
+
+            <p class="card-text">
+              Com um processo de compra de bilhetes fácil e rápido.
+            </p>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ================================== -->
+      <!-- =========== DESTINATION ========== -->
+      <!-- ================================== -->
+
+      <section class="section destination" aria-label="destino">
+        <div class="container">
+
+          <p class="section-subtitle">Melhores Destinos</p>
+          <h2 class="h2 title section-title">Descubra o destino perfeito para você</h2>
+
+          <ul class="destination-list">
+
+            <li>
+              <div class="destination-card">
+
+                <div class="card-banner img-holder" style="--width:600; --height: 650;">
+                  <img src="assets/img/destination-1.jpg" width="600" height="650" loading="lazy" alt="" class="img-cover">
+
+                  <span class="card-share">
+                    <i class="ph-bold ph-share-fat" aria-label="true"></i>
+                  </span>
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3 title">
+                    <a href="#" class="card-title">
+                      Pontos turísticos de Paris: 25 atrações imperdíveis
+                    </a>
+                  </h3>
+
+                  <address class="card-text">
+                    Paris, França
+                  </address>
+
+                  <div class="card-rating">
+                    <span class="span">
+                      <i class="ph-fill ph-star" aria-hidden="true"></i>
+                      4.7
+                    </span>
+                    <p class="rating-text">
+                      (30.1k Views)
+                    </p>
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="destination-card">
+
+                <div class="card-banner img-holder" style="--width:600; --height: 650;">
+                  <img src="assets/img/destination-2.jpg" width="600" height="650" loading="lazy" alt="" class="img-cover">
+
+                  <span class="card-share">
+                    <i class="ph-bold ph-share-fat" aria-label="true"></i>
+                  </span>
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3 title">
+                    <a href="#" class="card-title">
+                      Turismo no Brasil: 100 passeios para fazer no país
+                    </a>
+                  </h3>
+
+                  <address class="card-text">
+                    Brasil
+                  </address>
+
+                  <div class="card-rating">
+                    <span class="span">
+                      <i class="ph-fill ph-star" aria-hidden="true"></i>
+                      4.8
+                    </span>
+                    <p class="rating-text">
+                      (50.8k Views)
+                    </p>
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="destination-card">
+
+                <div class="card-banner img-holder" style="--width:600; --height: 650;">
+                  <img src="assets/img/destination-3.jpg" width="600" height="650" loading="lazy" alt="" class="img-cover">
+
+                  <span class="card-share">
+                    <i class="ph-bold ph-share-fat" aria-label="true"></i>
+                  </span>
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3 title">
+                    <a href="#" class="card-title">
+                      O que fazer em Veneza: 22 atrações obrigatórias
+                    </a>
+                  </h3>
+
+                  <address class="card-text">
+                    Veneza, Itália
+                  </address>
+
+                  <div class="card-rating">
+                    <span class="span">
+                      <i class="ph-fill ph-star" aria-hidden="true"></i>
+                      4.5
+                    </span>
+                    <p class="rating-text">
+                      (50k Views)
+                    </p>
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="destination-card">
+
+                <div class="card-banner img-holder" style="--width:600; --height: 650;">
+                  <img src="assets/img/destination-4.jpg" width="600" height="650" loading="lazy" alt="" class="img-cover">
+
+                  <span class="card-share">
+                    <i class="ph-bold ph-share-fat" aria-label="true"></i>
+                  </span>
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3 title">
+                    <a href="#" class="card-title">
+                      Pontos turísticos de Dubai: 30 atrações imperdíveis
+                    </a>
+                  </h3>
+
+                  <address class="card-text">
+                    Dubai, Emirados Árabes Unidos
+                  </address>
+
+                  <div class="card-rating">
+                    <span class="span">
+                      <i class="ph-fill ph-star" aria-hidden="true"></i>
+                      4.5
+                    </span>
+                    <p class="rating-text">
+                      (40.5k Views)
+                    </p>
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="destination-card">
+
+                <div class="card-banner img-holder" style="--width:600; --height: 650;">
+                  <img src="assets/img/destination-5.jpg" width="600" height="650" loading="lazy" alt="" class="img-cover">
+
+                  <span class="card-share">
+                    <i class="ph-bold ph-share-fat" aria-label="true"></i>
+                  </span>
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3 title">
+                    <a href="#" class="card-title">
+                      Canadá: Guia de viagem e principais destinos
+                    </a>
+                  </h3>
+
+                  <address class="card-text">
+                    Canadá
+                  </address>
+
+                  <div class="card-rating">
+                    <span class="span">
+                      <i class="ph-fill ph-star" aria-hidden="true"></i>
+                      4.5
+                    </span>
+                    <p class="rating-text">
+                      (20.1k Views)
+                    </p>
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="destination-card">
+
+                <div class="card-banner img-holder" style="--width:600; --height: 650;">
+                  <img src="assets/img/destination-6.jpg" width="600" height="650" loading="lazy" alt="" class="img-cover">
+
+                  <span class="card-share">
+                    <i class="ph-bold ph-share-fat" aria-label="true"></i>
+                  </span>
+                </div>
+
+                <div class="card-content">
+
+                  <h3 class="h3 title">
+                    <a href="#" class="card-title">
+                      30 curiosidades sobre o Japão para saber antes de viajar!
+                    </a>
+                  </h3>
+
+                  <address class="card-text">
+                    Japão
+                  </address>
+
+                  <div class="card-rating">
+                    <span class="span">
+                      <i class="ph-fill ph-star" aria-hidden="true"></i>
+                      4.5
+                    </span>
+                    <p class="rating-text">
+                      (15.9k Views)
+                    </p>
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <a href="#" class="btn btn-primary">Ver todos os destinos</a>
+
+        </div>
+      </section>
+
+      <!-- ================================== -->
+      <!-- ============ EXPERIENCE ========== -->
+      <!-- ================================== -->
+
+      <section class="section experience" aria-label="experiência">
+        <div class="container">
+
+          <div class="experience-content">
+
+            <p class="section-subtitle">
+              Nossa experiência
+            </p>
+
+            <h2 class="h2 title section-title">
+              Com nossa experiência, estamos prontos para atendê-lo.
+            </h2>
+
+            <p class="section-text">
+              Desde nossa inauguração, sempre priorizamos a conveniência dos nossos usuários, oferecendo preços baixos e um processo simples.
+            </p>
+
+            <ul class="experience-list">
+
+              <li class="experience-item">
+                <h3 class="h3 title item-title">15</h3>
+
+                <p class="item-text">
+                  Anos de experiência.
+                </p>
+              </li>
+
+              <li class="experience-item">
+                <h3 class="h3 title item-title">400+</h3>
+
+                <p class="item-text">
+                  Destinos
+                </p>
+              </li>
+
+              <li class="experience-item">
+                <h3 class="h3 title item-title">50K+</h3>
+
+                <p class="item-text">
+                  Cliente feliz
+                </p>
+              </li>
+
+
+            </ul>
+
+          </div>
+
+          <figure class="experience-banner">
+
+            <img src="assets/img/experience-banner.png" width="550" height="660" loading="lazy" alt="banner de experiência" class="banner-img">
+
+            <img src="assets/img/exp-shape.svg" width="75" height="109" loading="lazy" alt="suporte 24/7 guia" class="experience-shape">
+
+          </figure>
+
+        </div>
+      </section>
+
+      <!-- ================================== -->
+      <!-- ============= GALLERY ============ -->
+      <!-- ================================== -->
+
+      <section class="section gallery" aria-label="galeria">
+        <div class="container">
+
+          <p class="section-subtitle">
+            Galeria de fotos
+          </p>
+
+          <h2 class="h2 title section-title">
+            Fotos de viagem de nossos clientes
+          </h2>
+
+          <ul class="gallery-list">
+
+            <li class="gallery-item">
+
+              <figure class="item-banner img-holder" style="--width: 700; --height: 925;">
+                <img src="assets/img/gallery-1.jpg" width="700" height="925" loading="lazy" alt="galeria" class="img-cover">
+              </figure>
+
+            </li>
+
+            <li class="gallery-item">
+
+              <figure class="item-banner img-holder" style="--width: 700; --height: 925;">
+                <img src="assets/img/gallery-2.jpg" width="700" height="925" loading="lazy" alt="galeria" class="img-cover">
+              </figure>
+
+            </li>
+
+            <li class="gallery-item">
+
+              <figure class="item-banner img-holder" style="--width: 700; --height: 840;">
+                <img src="assets/img/gallery-3.jpg" width="700" height="840" loading="lazy" alt="galeria" class="img-cover">
+              </figure>
+
+            </li>
+
+            <li class="gallery-item">
+
+              <figure class="item-banner img-holder" style="--width: 700; --height: 378;">
+                <img src="assets/img/gallery-4.jpg" width="700" height="378" loading="lazy" alt="galeria" class="img-cover">
+              </figure>
+
+            </li>
+
+            <li class="gallery-item">
+
+              <figure class="item-banner img-holder" style="--width: 700; --height: 378;">
+                <img src="assets/img/gallery-5.jpg" width="700" height="378" loading="lazy" alt="galeria" class="img-cover">
+              </figure>
+
+            </li>
+
+            <li class="gallery-item">
+
+              <figure class="item-banner img-holder" style="--width: 700; --height: 378;">
+                <img src="assets/img/gallery-6.jpg" width="700" height="378" loading="lazy" alt="galeria" class="img-cover">
+              </figure>
+
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+      <!-- ================================== -->
+      <!-- =============== CTA ============== -->
+      <!-- ================================== -->
+
+      <section class="section cta" aria-label="chamada para ação">
+        <div class="container">
+
+          <div class="cta-card has-bg-image">
+
+            <h2 class="h2 title section-title">
+              Prepare-se para explorar a beleza do mundo
+
+              <img src="assets/img/title-icon.svg" width="36" height="36" loading="lazy" alt="icon" class="img">
+            </h2>
+
+            <p class="section-text">
+              Temos diversas ofertas especiais especialmente para você.
+            </p>
+
+            <a href="#" class="btn btn-primary">
+              Aproveite a Oferta
+            </a>
+
+          </div>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+  <!--========================================-->
+  <!--=============== FOOTER =================-->
+  <!--========================================-->
+
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer-top">
+
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <img src="assets/img/logo.svg" width="187" height="38" alt="logo explore">
+          </a>
+
+          <p class="footer-text">
+            We always make our customer happy by providing as many choices as possible
+          </p>
+
+          <ul class="social-list">
+            
+            <li>
+              <a href="#" class="social-link" target="_blank" aria-label="instagram">
+                <i class="ph ph-instagram-logo"></i>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link" target="_blank" aria-label="facebook">
+                <i class="ph ph-facebook-logo"></i>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link" target="_blank" aria-label="x">
+                <i class="ph ph-x-logo"></i>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Sobre</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Quem Somos</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Características</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Notícia</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Menu</a>
+          </li>
+
+        </ul>
+
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Company</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Why Company</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Partner With Us</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">FAQ</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Blog</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Support</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Account</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Support Center</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Feedback</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Contact Us</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Accessibility</a>
+          </li>
+
+        </ul>
+
+        <div class="footer-list">
+
+          <p class="footer-list-title">Get in Touch</p>
+
+          <p class="footer-text">
+            Question or feedback? We’d love to hear from you.
+          </p>
+
+          <form action="#" class="input-wrapper">
+            <input type="email" name="email-address" placeholder="Email Address" autocomplete="off" required class="input-field">
+
+            <button type="submit" class="input-btn" aria-label="envie uma mensagem">
+              <i class="ph ph-paper-plane-tilt" aria-hidden="true"></i>
+            </button>
+          </form>
+
+
+
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <ul class="footer-bottom-list">
+
+        <p class="copyright">
+         &copy; Copyright 2024. Feito por
+         <a href="https://github.com/jairochabr" class="copyright-link">Jairo Rocha</a>
+        </p>
+
+
+          <li>
+            <a href="#" class="footer-bottom-link">Termos e Condições</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-bottom-link">Privacidade e Política</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- JS -->
+  <script src="js/app.js"></script>
+</body>
+</html>
