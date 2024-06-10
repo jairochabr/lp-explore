@@ -920,6 +920,10 @@ body.nav-active {
     gap: 30px;
   }
 
+  .hero .wrapper .text {
+    line-height: 1.2;
+  }
+
   .hero .btn {
     margin-block-end: 0;
   }
