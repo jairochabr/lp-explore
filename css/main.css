@@ -185,6 +185,17 @@ body.nav-active {
   overflow: hidden;
 }
 
+.open {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  padding: 10px;
+  color: var(--color-body);
+  font-size: 2.4rem;
+  border-radius: 50%;
+  background: var(--color-primary);
+}
+
 /* ------------------------------------------ *\
               #REUSED STYLE
 \* ------------------------------------------ */

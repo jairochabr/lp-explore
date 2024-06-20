@@ -34,3 +34,14 @@ const header = document.querySelector("[data-header]");
 window.addEventListener("scroll", function () {
   header.classList[window.scrollY > 100 ? "add" : "remove"]("active");
 });
+
+
+// Open
+
+const openBtn = document.querySelector('.open')
+
+openBtn.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+  })
+})
