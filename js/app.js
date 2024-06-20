@@ -35,12 +35,19 @@ window.addEventListener("scroll", function () {
   header.classList[window.scrollY > 100 ? "add" : "remove"]("active");
 });
 
+// Back top btn
 
-// Open
+const backTopBtn = document.querySelector("[data-back-top-btn]");
 
-const openBtn = document.querySelector('.open')
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 100) {
+    backTopBtn.classList.add("active");
+  } else {
+    backTopBtn.classList.remove("active");
+  }
+});
 
-openBtn.addEventListener('click', () => {
+backTopBtn.addEventListener('click', () => {
   window.scrollTo({
     top: 0,
   })

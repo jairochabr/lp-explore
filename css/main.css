@@ -185,17 +185,6 @@ body.nav-active {
   overflow: hidden;
 }
 
-.open {
-  position: fixed;
-  right: 15px;
-  bottom: 15px;
-  padding: 10px;
-  color: var(--color-body);
-  font-size: 2.4rem;
-  border-radius: 50%;
-  background: var(--color-primary);
-}
-
 /* ------------------------------------------ *\
               #REUSED STYLE
 \* ------------------------------------------ */
@@ -896,6 +885,39 @@ body.nav-active {
   text-decoration: underline;
   text-decoration-color: var(--color-primary);
 }
+
+/* ------------------------------------------- *\
+                  #BACK TO TOP
+\* ------------------------------------------- */
+
+.back-top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  display: grid;
+  place-items: center;
+  border-radius: var(--radius-circle);
+  border: 3px solid var(--color-primary-light);
+  transition: var(--transition-1);
+  visibility: hidden;
+  opacity: 0;
+  z-index: 4;
+}
+
+.back-top-btn:is(:hover, :focus-visible) {
+  box-shadow: var(--shadow-2);
+}
+
+.back-top-btn.active {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(-10px);
+}
+
 
 /* ------------------------------------------- *\
                    #MEDIA QUERIES
